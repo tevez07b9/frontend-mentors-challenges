@@ -17,10 +17,13 @@ const Input: React.FC<Props> = ({
 }) => {
   return (
     <div className={`flex flex-col ${error ? "error" : "mb-8 md:mb-6"}`}>
-      <label className="label">{label}</label>
+      <label htmlFor={name} className="label">
+        {label}
+      </label>
       <input
         name={name}
         type={type}
+        id={name}
         defaultValue={defaultValue}
         className="input"
       />

@@ -62,7 +62,7 @@ const AgeCalculator = () => {
 
   return (
     <div className="w-full min-h-screen light-grey-bg flex justify-center items-center">
-      <article className="p-4 md:p-10 bg-white text-black rounded-3xl max-w-[90%] md:min-w-[40%] rounded-br-[90px]">
+      <main className="p-4 md:p-10 bg-white text-black rounded-3xl max-w-[90%] md:min-w-[40%] rounded-br-[90px]">
         <form
           onSubmit={handleSubmit}
           className="w-full flex justify-start items-start space-x-6 pt-6 pb-8 border-b border-b-gray-200 relative"
@@ -87,12 +87,12 @@ const AgeCalculator = () => {
           />
           <CalculateBtn />
         </form>
-        <div className="flex flex-col mt-8 space-y-2">
+        <article className="flex flex-col mt-8 space-y-2">
           <ValueText value={values["years"] || "-"} text="years" />
           <ValueText value={values["months"] || "-"} text="months" />
           <ValueText value={values["days"] || "-"} text="days" />
-        </div>
-      </article>
+        </article>
+      </main>
     </div>
   );
 };
