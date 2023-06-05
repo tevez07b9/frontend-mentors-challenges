@@ -1,0 +1,54 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.light-grey-bg {
+  background-color: var(--light-grey);
+}
+
+.label {
+  @apply uppercase text-base mb-2 font-bold tracking-widest;
+  color: var(--smokey-grey);
+}
+
+.input {
+  @apply p-2 max-w-[90px] md:max-w-[180px] md:py-3 md:px-7 text-base md:text-[32px] text-black font-bold rounded-md;
+  border: 1px solid var(--light-grey);
+}
+
+.input:focus-visible {
+  outline: none;
+  border: 1px solid var(--purple);
+}
+
+.error .label,
+.error p {
+  color: var(--light-red);
+}
+
+.error .input,
+.error .input:focus-visible {
+  border-color: var(--light-red);
+}
+
+.result {
+  @apply text-5xl md:text-7xl text-black italic font-extrabold;
+}
+
+.result .value {
+  @apply mr-4;
+  color: var(--purple);
+}
+
+.error {
+}

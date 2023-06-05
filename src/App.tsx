@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import QrCode from "./routes/qrcode";
+import AgeCalculator from "./routes/agecalucator";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Route>
         <Route path="/" element={<QrCode />} />
         <Route path="/qrcode" element={<QrCode />} />
+        <Route path="/age-calculator" element={<AgeCalculator />} />
       </Route>
     </Routes>
   );
